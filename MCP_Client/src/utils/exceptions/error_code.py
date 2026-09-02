@@ -1,0 +1,12 @@
+
+from enum import Enum
+
+
+class ErrorCode(str, Enum):
+    ORDER_NOT_FOUND = "E-COM-001"
+    INVALID_UUID = "E-COM-002"
+    ORDER_ITEM_NOT_FOUND = "E-COM-003"
+    PRODUCT_NOT_FOUND = "E-COM-004"
+    STOCK_EXCEEDED = "E-COM-005"
+    DATABASE_ERROR = "E-COM-501"
+    INTERNAL_ERROR = "E-COM-500" 
